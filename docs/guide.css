@@ -1,0 +1,33 @@
+@font-face { font-family: 'Andika'; font-weight: 400; src: url('../public/fonts/andika-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Andika'; font-weight: 700; src: url('../public/fonts/andika-latin-700-normal.woff2') format('woff2'); }
+@page { size: A4; margin: 16mm 15mm; }
+:root { --ink: #1F2A44; --cream: #FFF8E7; --sun: #FFD23F; --blue: #1D6FD8; --sky: #CFE8FF; --mint: #7DE2B8; --line: #C9D2E3; --orange: #C2410C; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); font: 400 11.5pt/1.5 'Andika', 'Trebuchet MS', sans-serif; background: #fff; }
+h1 { font-size: 26pt; margin: 0 0 6mm; line-height: 1.15; }
+h2 { font-size: 17pt; margin: 0 0 3mm; line-height: 1.2; }
+h3 { font-size: 12.5pt; margin: 5mm 0 1.5mm; }
+p { margin: 0 0 3mm; }
+ul, ol { margin: 0 0 3mm; padding-left: 6mm; } li { margin-bottom: 1.2mm; }
+.page { page-break-after: always; break-after: page; padding: 0; min-height: 255mm; }
+.page:last-child { page-break-after: auto; break-after: auto; }
+.cover { text-align: center; padding-top: 22mm; }
+.cover h1 { font-size: 34pt; } .cover .sub { font-size: 15pt; margin-bottom: 8mm; }
+.mark { color: var(--orange); }
+.shot { display: block; margin: 2mm auto 3mm; border: 1.2pt solid var(--ink); border-radius: 3mm; max-width: 100%; }
+.shot.phone { max-height: 165mm; } .shot.wide { width: 100%; }
+.cap { font-size: 10pt; color: #3C4864; margin: 0 0 4mm; text-align: center; }
+.row { display: flex; gap: 6mm; align-items: flex-start; } .row > * { flex: 1 1 0; min-width: 0; }
+.box { background: var(--cream); border: 1.2pt solid var(--ink); border-radius: 3mm; padding: 4mm 5mm; margin: 3mm 0 4mm; }
+.box.note { background: var(--sky); } .box.good { background: #DFF7EC; }
+.num { display: inline-block; width: 6.5mm; height: 6.5mm; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 700; text-align: center; line-height: 6.5mm; font-size: 10pt; margin-right: 1.5mm; }
+table.t { width: 100%; border-collapse: collapse; font-size: 10.5pt; margin: 2mm 0 4mm; }
+table.t th, table.t td { border: 1pt solid var(--line); padding: 2mm 3mm; text-align: left; vertical-align: top; }
+table.t th { background: #EEF3FB; }
+kbd, .btn { display: inline-block; border: 1.2pt solid var(--ink); border-radius: 2mm; padding: 0 2.5mm; font-weight: 700; background: #fff; }
+.btn.y { background: var(--sun); } .btn.b { background: var(--blue); color: #fff; }
+.q { font-size: 15pt; } .big { font-size: 15pt; line-height: 1.6; }
+.foot { font-size: 9pt; color: #5A6580; margin-top: 4mm; }
+.steps { counter-reset: s; list-style: none; padding: 0; } .steps li { counter-increment: s; margin-bottom: 3mm; padding-left: 10mm; position: relative; }
+.steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 7mm; height: 7mm; border-radius: 50%; background: var(--sun); border: 1.2pt solid var(--ink); text-align: center; font-weight: 700; line-height: 6mm; }
+.pupil h2 { font-size: 22pt; } .pupil .big, .pupil p { font-size: 15pt; } .pupil li { font-size: 15pt; } .pupil .cap { font-size: 11.5pt; }

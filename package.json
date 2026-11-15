@@ -1,0 +1,23 @@
+{
+  "name": "dialogue-dash-junior",
+  "version": "0.3.0",
+  "description": "Dialogue Dash Junior: tap-only dialogue punctuation practice for Primary 2.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:items": "node scripts/build-items.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "test:ui": "node --test \"test/ui/*.test.mjs\"",
+    "test:visual": "node test/visual/run.mjs",
+    "test:visual:update": "UPDATE=1 node test/visual/run.mjs",
+    "test": "npm run check:content && npm run test:server && npm run test:ui && npm run test:visual",
+    "serve": "node scripts/serve.mjs",
+    "test:server": "node --test \"test/server/*.test.mjs\""
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "pixelmatch": "^7.2.0",
+    "playwright": "^1.50.0",
+    "pngjs": "^7.0.0"
+  }
+}
