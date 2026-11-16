@@ -14,7 +14,7 @@
   // 1) npx wrangler d1 create dialogue-dash-junior   2) paste the database_id it prints below.
   // 3) npx wrangler d1 migrations apply dialogue-dash-junior --remote
   "d1_databases": [
-    { "binding": "DB", "database_name": "dialogue-dash-junior", "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID", "migrations_dir": "migrations" }
+    { "binding": "DB", "database_name": "dialogue-dash-junior", "database_id": "5a00e15a-cc56-45e6-a481-9e24b58990d9", "migrations_dir": "migrations" }
   ],
 
   // Slows down guessing of class codes and passwords (per IP). Remove if you prefer a WAF rule.
